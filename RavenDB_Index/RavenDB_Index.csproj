@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="RavenDB.Client" Version="5.4.104" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Controllers\teste.cshtml" />
+      <Content Remove="Processes\InicializaIndices.cs\**" />
+      <Content Include="Processes\InicializaIndices\InicializaIndices.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\teste.cshtml.cs" />
+      <Compile Remove="Models\NomeSobrenome.cs" />
+      <Compile Remove="Data\DocumentStoreHolder.cs" />
+      <Compile Remove="Processes\InicializaIndices.cs\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Processes\InicializaIndices.cs\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Processes\InicializaIndices.cs\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Processes\InicializaIndices.cs\obj\InicializaIndices.cs.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="Processes\InicializaIndices.cs\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Processes\InicializaIndices\obj\InicializaIndices.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="Processes\InicializaIndices\obj\project.assets.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Processes\InicializaIndices\bin\Debug\net6.0\" />
+      <Folder Include="Processes\InicializaIndices\obj\Debug\net6.0\refint\" />
+      <Folder Include="Processes\InicializaIndices\obj\Debug\net6.0\ref\" />
+    </ItemGroup>
+
+</Project>

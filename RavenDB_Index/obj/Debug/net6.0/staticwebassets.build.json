@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lTvvT9k1KvsahDeJenjvcAZMDyxvPus9NQyoBJ3SKFg=",
+  "Source": "RavenDB_Index",
+  "BasePath": "_content/RavenDB_Index",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

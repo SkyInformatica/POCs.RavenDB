@@ -15,6 +15,7 @@
       <Content Remove="Controllers\teste.cshtml" />
       <Content Remove="Processes\InicializaIndices.cs\**" />
       <Content Include="Processes\InicializaIndices\InicializaIndices.csproj" />
+      <Content Remove="Processes\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -22,14 +23,17 @@
       <Compile Remove="Models\NomeSobrenome.cs" />
       <Compile Remove="Data\DocumentStoreHolder.cs" />
       <Compile Remove="Processes\InicializaIndices.cs\**" />
+      <Compile Remove="Processes\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Processes\InicializaIndices.cs\**" />
+      <EmbeddedResource Remove="Processes\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Processes\InicializaIndices.cs\**" />
+      <None Remove="Processes\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -37,12 +41,6 @@
       <_ContentIncludedByDefault Remove="Processes\InicializaIndices.cs\obj\project.assets.json" />
       <_ContentIncludedByDefault Remove="Processes\InicializaIndices\obj\InicializaIndices.csproj.nuget.dgspec.json" />
       <_ContentIncludedByDefault Remove="Processes\InicializaIndices\obj\project.assets.json" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Processes\InicializaIndices\bin\Debug\net6.0\" />
-      <Folder Include="Processes\InicializaIndices\obj\Debug\net6.0\refint\" />
-      <Folder Include="Processes\InicializaIndices\obj\Debug\net6.0\ref\" />
     </ItemGroup>
 
 </Project>

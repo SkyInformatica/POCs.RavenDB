@@ -92,8 +92,9 @@ public class ClientesController : ControllerBase
         using (var session = store.OpenSession())
         {
             clientes = session
-                .Query<Cliente, Clientes_PorProdutos>()
-                .Where(c => c.Produtos.Any(p => p.Id == idProduto))
+                .Query<Clientes_PorProdutos.Result, Clientes_PorProdutos>()
+                .Where(resultado => resultado.IdProduto == idProduto)
+                .OfType<Cliente>()
                 .ToList();
         }
 
